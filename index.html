@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="el">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Αλατιέρα | Μεσογειακή κουζίνα στη λιμνοθάλασσα Μεσολογγίου</title>
+    <meta name="description" content="Στατικό HTML, CSS και JavaScript template για την Αλατιέρα, με μεσογειακή κουζίνα, cocktail bar, gallery και στοιχεία επίσκεψης.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+        <a class="brand" href="#top" aria-label="Αλατιέρα αρχική">
+            <span class="brand-symbol">Α</span>
+            <span>
+                <strong>Αλατιέρα</strong>
+                <small>Λιμνοθάλασσα Μεσολογγίου</small>
+            </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+            <b>Μενού</b>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Κύρια πλοήγηση" data-nav>
+            <a href="#experience">Εμπειρία</a>
+            <a href="#athletes">Athletes</a>
+            <a href="#records">Records</a>
+            <a href="#blog">Blog</a>
+            <a href="#media">Media</a>
+            <a href="#menu">Μενού</a>
+            <a href="#visit">Επίσκεψη</a>
+        </nav>
+
+        <button class="header-action" type="button" data-open-reservation>Κράτηση</button>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <picture class="hero-image">
+                <source srcset="assets/img/gallery-sunset.png" media="(min-width: 760px)">
+                <img src="assets/img/alatiera-hero.png" alt="Τραπέζι δίπλα στη λιμνοθάλασσα στην Αλατιέρα">
+            </picture>
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="hero-inner reveal">
+                <p class="section-kicker">Waterfront dining · cocktails · sunset tables</p>
+                <h1 id="hero-title">Αλατιέρα</h1>
+                <p class="hero-copy">Μεσογειακή κουζίνα, καθαρά ποτά και ήρεμη ατμόσφαιρα δίπλα στο νερό, από τον πρώτο καφέ μέχρι το τελευταίο cocktail.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#menu">Δείτε το μενού</a>
+                    <button class="btn btn-secondary" type="button" data-open-reservation>Κλείστε τραπέζι</button>
+                </div>
+            </div>
+            <div class="hero-strip" aria-label="Σύντομες πληροφορίες">
+                <article>
+                    <span>Τοποθεσία</span>
+                    <strong>Τουρλίδα, Μεσολόγγι</strong>
+                </article>
+                <article>
+                    <span>Ωράριο</span>
+                    <strong>Καθημερινά έως 02:00</strong>
+                </article>
+                <article>
+                    <span>Επικοινωνία</span>
+                    <strong>2631 022943</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="feature-intro" id="experience">
+            <div class="intro-copy reveal">
+                <p class="section-kicker">Η αίσθηση του χώρου</p>
+                <h2>Ένα template που δίνει προτεραιότητα στην εικόνα, στον ρυθμό και στην άμεση απόφαση επίσκεψης.</h2>
+            </div>
+            <div class="intro-note reveal">
+                <p>Η σελίδα είναι στατική, γρήγορη και εύκολη στην προσαρμογή. Οι ενότητες οργανώνουν την εμπειρία της Αλατιέρας με premium φωτογραφική παρουσία, καθαρή τυπογραφία, responsive cards, εμφανή στοιχεία επικοινωνίας και μικρές διαδραστικές λεπτομέρειες χωρίς backend.</p>
+            </div>
+        </section>
+
+        <section class="highlights" aria-label="Χαρακτηριστικά εμπειρίας">
+            <article class="highlight reveal">
+                <span>01</span>
+                <h3>Τραπέζια στο νερό</h3>
+                <p>Φωτεινή μεσημεριανή στάση, χρυσοί τόνοι στο ηλιοβασίλεμα και χαμηλός φωτισμός το βράδυ.</p>
+            </article>
+            <article class="highlight reveal">
+                <span>02</span>
+                <h3>Μεσογειακές γεύσεις</h3>
+                <p>Πιάτα για τη μέση, φρέσκες σαλάτες, σχάρα, ριζότο, vegan επιλογές και καθαρά υλικά.</p>
+            </article>
+            <article class="highlight reveal">
+                <span>03</span>
+                <h3>Cocktail bar</h3>
+                <p>Spritz, negroni, long drinks, κρασί και δροσερά ροφήματα για κάθε ώρα της ημέρας.</p>
+            </article>
+            <article class="highlight reveal">
+                <span>04</span>
+                <h3>Μικρές εκδηλώσεις</h3>
+                <p>Ιδιωτικά τραπέζια, γενέθλια και επαγγελματικές συναντήσεις σε ήρεμο waterfront σκηνικό.</p>
+            </article>
+        </section>
+
+        <section class="athletes-section" id="athletes">
+            <div class="section-heading reveal">
+                <p class="section-kicker">Athlete profiles</p>
+                <h2>Detailed profile cards for players, competitors, coaches, or ambassadors.</h2>
+            </div>
+
+            <div class="athlete-grid">
+                <article class="athlete-card reveal">
+                    <div class="athlete-photo">
+                        <img src="assets/img/gallery-sunset.png" alt="Athlete profile portrait">
+                        <span>Captain</span>
+                    </div>
+                    <div class="athlete-content">
+                        <p class="athlete-role">Endurance · Senior Team</p>
+                        <h3>Alexios Marinakis</h3>
+                        <p>Calm race manager with strong finishing pace, consistent training volume, and leadership presence during high-pressure events.</p>
+                        <dl class="athlete-stats">
+                            <div><dt>Age</dt><dd>27</dd></div>
+                            <div><dt>Events</dt><dd>42</dd></div>
+                            <div><dt>Wins</dt><dd>12</dd></div>
+                        </dl>
+                        <a class="text-link" href="athletes/alexios-marinakis.html">Open profile</a>
+                    </div>
+                </article>
+
+                <article class="athlete-card reveal">
+                    <div class="athlete-photo">
+                        <img src="assets/img/gallery-food.png" alt="Athlete profile portrait">
+                        <span>Rising</span>
+                    </div>
+                    <div class="athlete-content">
+                        <p class="athlete-role">Sprint · Development Squad</p>
+                        <h3>Maria Lykou</h3>
+                        <p>Explosive first step, sharp technical discipline, and rapid progress across short-distance performance tests.</p>
+                        <dl class="athlete-stats">
+                            <div><dt>Age</dt><dd>22</dd></div>
+                            <div><dt>Events</dt><dd>31</dd></div>
+                            <div><dt>PB</dt><dd>11.82</dd></div>
+                        </dl>
+                        <a class="text-link" href="athletes/maria-lykou.html">Open profile</a>
+                    </div>
+                </article>
+
+                <article class="athlete-card reveal">
+                    <div class="athlete-photo">
+                        <img src="assets/img/gallery-cocktails.png" alt="Athlete profile portrait">
+                        <span>Elite</span>
+                    </div>
+                    <div class="athlete-content">
+                        <p class="athlete-role">Strength · Performance Team</p>
+                        <h3>Nikos Stavrou</h3>
+                        <p>Power-focused athlete with reliable competition temperament, strong recovery habits, and measurable year-over-year gains.</p>
+                        <dl class="athlete-stats">
+                            <div><dt>Age</dt><dd>29</dd></div>
+                            <div><dt>Events</dt><dd>58</dd></div>
+                            <div><dt>Podiums</dt><dd>21</dd></div>
+                        </dl>
+                        <a class="text-link" href="athletes/nikos-stavrou.html">Open profile</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="records-section" id="records">
+            <div class="records-panel reveal">
+                <div>
+                    <p class="section-kicker">Records board</p>
+                    <h2>Personal bests, season marks, rankings, and milestone achievements.</h2>
+                    <a class="text-link text-link-light" href="records/index.html">View full records archive</a>
+                </div>
+                <div class="record-summary">
+                    <article><span>24</span><strong>Club records</strong></article>
+                    <article><span>08</span><strong>Season bests</strong></article>
+                    <article><span>16</span><strong>Podium finishes</strong></article>
+                </div>
+            </div>
+
+            <div class="records-table-wrap reveal">
+                <table class="records-table">
+                    <thead>
+                        <tr>
+                            <th>Discipline</th>
+                            <th>Athlete</th>
+                            <th>Record</th>
+                            <th>Event</th>
+                            <th>Season</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>100m Sprint</td>
+                            <td>Maria Lykou</td>
+                            <td>11.82</td>
+                            <td>Regional Final</td>
+                            <td>2026</td>
+                        </tr>
+                        <tr>
+                            <td>10K Road</td>
+                            <td>Alexios Marinakis</td>
+                            <td>31:48</td>
+                            <td>Lagoon Challenge</td>
+                            <td>2026</td>
+                        </tr>
+                        <tr>
+                            <td>Strength Combine</td>
+                            <td>Nikos Stavrou</td>
+                            <td>912 pts</td>
+                            <td>Elite Testing Day</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>Relay</td>
+                            <td>Senior Team</td>
+                            <td>42.14</td>
+                            <td>National Qualifier</td>
+                            <td>2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="blog-section" id="blog">
+            <div class="section-heading reveal">
+                <p class="section-kicker">Blog & updates</p>
+                <h2>Editorial posts for news, interviews, event recaps, and performance stories.</h2>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card blog-feature reveal">
+                    <img src="assets/img/gallery-night.png" alt="Feature blog image">
+                    <div>
+                        <span>Feature · Training</span>
+                        <h3>How the team prepares for a high-intensity season block</h3>
+                        <p>A long-form article layout with space for strategy, training philosophy, recovery notes, and coach commentary.</p>
+                        <a href="blog/season-preparation.html">Read story</a>
+                    </div>
+                </article>
+
+                <article class="blog-card reveal">
+                    <img src="assets/img/gallery-sunset.png" alt="Blog image">
+                    <div>
+                        <span>Interview</span>
+                        <h3>Inside the mindset of a consistent finisher</h3>
+                        <p>Profile-led storytelling for athletes, staff, or community members.</p>
+                        <a href="blog/consistent-finisher.html">Read story</a>
+                    </div>
+                </article>
+
+                <article class="blog-card reveal">
+                    <img src="assets/img/gallery-food.png" alt="Blog image">
+                    <div>
+                        <span>Nutrition</span>
+                        <h3>Simple routines that support training volume</h3>
+                        <p>Educational content blocks for preparation, habits, and seasonal plans.</p>
+                        <a href="blog/training-routines.html">Read story</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="media-section" id="media">
+            <div class="section-heading reveal">
+                <p class="section-kicker">Media hub</p>
+                <h2>Galleries, images, videos, highlights, and campaign-ready media cards.</h2>
+            </div>
+
+            <div class="media-tabs reveal" role="tablist" aria-label="Media filters">
+                <button class="is-active" type="button" data-media-filter="all">All</button>
+                <button type="button" data-media-filter="image">Images</button>
+                <button type="button" data-media-filter="gallery">Galleries</button>
+                <button type="button" data-media-filter="video">Videos</button>
+            </div>
+
+            <div class="media-grid">
+                <a class="media-card media-large reveal" href="galleries/season-launch.html" data-media-item="gallery">
+                    <img src="assets/img/gallery-sunset.png" alt="Season launch gallery">
+                    <span>Gallery</span>
+                    <strong>Season launch gallery</strong>
+                </a>
+                <a class="media-card reveal" href="media/editorial-image-set.html" data-media-item="image">
+                    <img src="assets/img/alatiera-hero.png" alt="Editorial image set">
+                    <span>Image</span>
+                    <strong>Editorial image set</strong>
+                </a>
+                <a class="media-card video-card reveal" href="media/competition-highlight.html" data-media-item="video">
+                    <img src="assets/img/gallery-night.png" alt="Video highlight thumbnail">
+                    <span>Video · 02:14</span>
+                    <strong>Competition highlight reel</strong>
+                    <i aria-hidden="true"></i>
+                </a>
+                <a class="media-card reveal" href="media/profile-photography.html" data-media-item="image">
+                    <img src="assets/img/gallery-cocktails.png" alt="Profile photography">
+                    <span>Image</span>
+                    <strong>Profile photography</strong>
+                </a>
+                <a class="media-card video-card reveal" href="media/training-notes.html" data-media-item="video">
+                    <img src="assets/img/gallery-food.png" alt="Training notes video thumbnail">
+                    <span>Video · 00:48</span>
+                    <strong>Training notes short</strong>
+                    <i aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-heading reveal">
+                <p class="section-kicker">Μενού ημέρας</p>
+                <h2>Κατηγορίες με φίλτρα, τιμές και badges για άμεση ανάγνωση.</h2>
+            </div>
+
+            <div class="menu-tabs reveal" role="tablist" aria-label="Φίλτρα μενού">
+                <button class="is-active" type="button" data-filter="all">Όλα</button>
+                <button type="button" data-filter="food">Φαγητό</button>
+                <button type="button" data-filter="drink">Ποτό</button>
+                <button type="button" data-filter="sweet">Καφέ & γλυκό</button>
+            </div>
+
+            <div class="menu-grid" data-menu-grid>
+                <article class="menu-card reveal" data-category="food">
+                    <div>
+                        <span class="badge">Vegan</span>
+                        <h3>Σαλάτα λεμονάτη</h3>
+                        <p>Πράσινα φύλλα, φρέσκα μυρωδικά, dressing λεμονιού και τραγανά στοιχεία.</p>
+                    </div>
+                    <strong>8.50€</strong>
+                </article>
+                <article class="menu-card reveal" data-category="food">
+                    <div>
+                        <span class="badge badge-warm">Signature</span>
+                        <h3>Ριζότο παρμεζάνας</h3>
+                        <p>Κρεμώδες ριζότο με παρμεζάνα, λευκό κρασί και φρεσκοτριμμένο πιπέρι.</p>
+                    </div>
+                    <strong>12.40€</strong>
+                </article>
+                <article class="menu-card reveal" data-category="food">
+                    <div>
+                        <span class="badge badge-olive">Best seller</span>
+                        <h3>Ψαρονέφρι σχάρας</h3>
+                        <p>Ζουμερό ψαρονέφρι με αρωματική σάλτσα, baby πατάτες και σαλάτα εποχής.</p>
+                    </div>
+                    <strong>15.80€</strong>
+                </article>
+                <article class="menu-card reveal" data-category="drink">
+                    <div>
+                        <span class="badge badge-coral">Cocktail</span>
+                        <h3>Alykes Spritz</h3>
+                        <p>Bitters, αφρώδης οίνος, citrus αρώματα και ένταση που ταιριάζει στο ηλιοβασίλεμα.</p>
+                    </div>
+                    <strong>8.00€</strong>
+                </article>
+                <article class="menu-card reveal" data-category="drink">
+                    <div>
+                        <span class="badge badge-coral">Cocktail</span>
+                        <h3>Lagoon Negroni</h3>
+                        <p>Ισορροπημένο negroni με ελληνικό botanical χαρακτήρα και καθαρή επίγευση.</p>
+                    </div>
+                    <strong>9.00€</strong>
+                </article>
+                <article class="menu-card reveal" data-category="sweet">
+                    <div>
+                        <span class="badge">Cold</span>
+                        <h3>Cold brew tonic</h3>
+                        <p>Cold brew με tonic, πάγο και φλούδα εσπεριδοειδών για δροσερή στάση.</p>
+                    </div>
+                    <strong>4.50€</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="split-showcase">
+            <div class="showcase-image reveal">
+                <img src="assets/img/gallery-food.png" alt="Πιάτα και ποτά σε τραπέζι στην Αλατιέρα">
+            </div>
+            <div class="showcase-copy reveal">
+                <p class="section-kicker">Σχεδιαστική κατεύθυνση</p>
+                <h2>Ήσυχο luxury, φυσικά χρώματα, έντονη φωτογραφία και controls που μοιάζουν με πραγματικό προϊόν.</h2>
+                <div class="tone-list">
+                    <span>Lagoon teal</span>
+                    <span>Terracotta</span>
+                    <span>Olive green</span>
+                    <span>Warm ivory</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <div class="section-heading reveal">
+                <p class="section-kicker">Gallery</p>
+                <h2>Μεγάλα κάδρα, καθαρές λεζάντες και lightbox για περισσότερη παρουσία.</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <button class="gallery-item gallery-large reveal" type="button" data-lightbox="assets/img/gallery-sunset.png" data-title="Ηλιοβασίλεμα στη βεράντα">
+                    <img src="assets/img/gallery-sunset.png" alt="Ηλιοβασίλεμα στη βεράντα">
+                    <span>Ηλιοβασίλεμα στη βεράντα</span>
+                </button>
+                <button class="gallery-item reveal" type="button" data-lightbox="assets/img/gallery-cocktails.png" data-title="Cocktails δίπλα στο νερό">
+                    <img src="assets/img/gallery-cocktails.png" alt="Cocktails δίπλα στο νερό">
+                    <span>Cocktails δίπλα στο νερό</span>
+                </button>
+                <button class="gallery-item reveal" type="button" data-lightbox="assets/img/gallery-night.png" data-title="Βραδινή ατμόσφαιρα">
+                    <img src="assets/img/gallery-night.png" alt="Βραδινή ατμόσφαιρα">
+                    <span>Βραδινή ατμόσφαιρα</span>
+                </button>
+                <button class="gallery-item gallery-wide reveal" type="button" data-lightbox="assets/img/alatiera-hero.png" data-title="Η εμπειρία στο τραπέζι">
+                    <img src="assets/img/alatiera-hero.png" alt="Η εμπειρία στο τραπέζι">
+                    <span>Η εμπειρία στο τραπέζι</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="mood-section" aria-labelledby="mood-title">
+            <div class="mood-copy reveal">
+                <p class="section-kicker">Ημέρα / Νύχτα</p>
+                <h2 id="mood-title">Ένας διακόπτης αλλάζει το ύφος της ίδιας εμπειρίας.</h2>
+                <p>Το component μπορεί να χρησιμοποιηθεί για ώρες λειτουργίας, private events, seasonal campaigns ή εναλλαγή φωτογραφιών ανά περίοδο.</p>
+                <button class="mood-toggle" type="button" aria-pressed="false" data-mood-toggle>
+                    <span aria-hidden="true"><i></i></span>
+                    <b>Προβολή νύχτας</b>
+                </button>
+            </div>
+            <div class="mood-stage reveal" data-mood-stage="day">
+                <img class="mood-day" src="assets/img/gallery-sunset.png" alt="Ημερήσια εικόνα στην Αλατιέρα">
+                <img class="mood-night" src="assets/img/gallery-night.png" alt="Νυχτερινή εικόνα στην Αλατιέρα">
+                <div class="mood-label">
+                    <span>Τρέχουσα εικόνα</span>
+                    <strong data-mood-label>Ημέρα στη βεράντα</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-section" id="events">
+            <div class="section-heading reveal">
+                <p class="section-kicker">Στιγμές ημέρας</p>
+                <h2>Τρεις λόγοι επίσκεψης σε μία καθαρή editorial ενότητα.</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <time>12:00 - 17:00</time>
+                    <h3>Φωτεινό τραπέζι</h3>
+                    <p>Καφές, ελαφρύ φαγητό, ήρεμος ρυθμός και καθαρή θέα στη λιμνοθάλασσα.</p>
+                </article>
+                <article class="timeline-item reveal">
+                    <time>18:30 - 21:00</time>
+                    <h3>Ηλιοβασίλεμα</h3>
+                    <p>Η πιο δυνατή ώρα για φαγητό, ποτό και φωτογραφίες με θερμό φυσικό φως.</p>
+                </article>
+                <article class="timeline-item reveal">
+                    <time>21:00 - 02:00</time>
+                    <h3>Νυχτερινή βεράντα</h3>
+                    <p>Cocktails, χαμηλός φωτισμός, ζεστά υλικά και ατμόσφαιρα για παρέες.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="reviews-section" aria-label="Κριτικές">
+            <figure class="review-card reveal">
+                <blockquote>Η θέα δεν λειτουργεί σαν φόντο. Είναι το πρώτο υλικό της εμπειρίας.</blockquote>
+                <figcaption>Template direction</figcaption>
+            </figure>
+            <figure class="review-card reveal">
+                <blockquote>Μεγάλη εικόνα, άμεση πληροφορία και καθαρά actions για κράτηση ή οδηγίες.</blockquote>
+                <figcaption>UX note</figcaption>
+            </figure>
+            <figure class="review-card reveal">
+                <blockquote>Η αισθητική κρατά premium ρυθμό χωρίς να θυσιάζει την πρακτικότητα.</blockquote>
+                <figcaption>Design note</figcaption>
+            </figure>
+        </section>
+
+        <section class="visit-section" id="visit">
+            <div class="visit-media" aria-hidden="true"></div>
+            <div class="visit-content reveal">
+                <p class="section-kicker">Επίσκεψη</p>
+                <h2>Αλατιέρα, Λιμνοθάλασσα Μεσολογγίου</h2>
+                <p>Επαρ. Οδ. Μεσολογγίου - Αλυκών Τουρλίδας 27, Μεσολόγγι 302 00</p>
+                <div class="visit-actions">
+                    <a class="btn btn-primary" href="tel:2631022943">2631 022943</a>
+                    <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%CE%91%CE%BB%CE%B1%CF%84%CE%B9%CE%AD%CF%81%CE%B1%20%CE%9C%CE%B5%CF%83%CE%BF%CE%BB%CF%8C%CE%B3%CE%B3%CE%B9">Οδηγίες</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>Αλατιέρα · Μεσολόγγι</span>
+        <a href="#top">Πίσω στην κορυφή</a>
+    </footer>
+
+    <dialog class="reservation-dialog" data-reservation-dialog>
+        <form method="dialog" class="reservation-panel">
+            <button class="dialog-close" value="close" aria-label="Κλείσιμο">×</button>
+            <p class="section-kicker">Κράτηση</p>
+            <h2>Στείλτε αίτημα τραπεζιού</h2>
+            <label>
+                Ονοματεπώνυμο
+                <input type="text" name="name" placeholder="π.χ. Μαρία Παπαδοπούλου">
+            </label>
+            <label>
+                Τηλέφωνο
+                <input type="tel" name="phone" placeholder="π.χ. 69xx xxx xxx">
+            </label>
+            <div class="form-row">
+                <label>
+                    Ημερομηνία
+                    <input type="date" name="date">
+                </label>
+                <label>
+                    Ώρα
+                    <input type="time" name="time">
+                </label>
+            </div>
+            <label>
+                Άτομα
+                <select name="guests">
+                    <option>2 άτομα</option>
+                    <option>3-4 άτομα</option>
+                    <option>5-6 άτομα</option>
+                    <option>7+ άτομα</option>
+                </select>
+            </label>
+            <button class="btn btn-primary" value="confirm">Ολοκλήρωση</button>
+            <p class="form-note">Το template δεν αποστέλλει δεδομένα. Συνδέστε τη φόρμα με email service ή backend όταν χρειαστεί.</p>
+        </form>
+    </dialog>
+
+    <div class="lightbox" hidden data-lightbox-panel>
+        <button type="button" aria-label="Κλείσιμο gallery" data-lightbox-close>×</button>
+        <img src="" alt="" data-lightbox-image>
+        <strong data-lightbox-title></strong>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
